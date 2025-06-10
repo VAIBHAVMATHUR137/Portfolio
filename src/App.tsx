@@ -2,6 +2,7 @@ import AboutSection from "./components/AboutSection";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import ProjectSection from "./components/ProjectSection";
+import SkillsSection from "./components/SkillSection";
 
 function App() {
   return (
@@ -30,9 +31,9 @@ function App() {
 
         <section
           id="skills"
-          className="h-screen flex items-center justify-center bg-slate-800"
+          className="min-h-screen flex items-center justify-center bg-slate-800"
         >
-          <h2 className="text-3xl font-bold text-white">Skills</h2>
+          <SkillsSection/>
         </section>
         <section
           id="contact"

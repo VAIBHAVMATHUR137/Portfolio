@@ -1,6 +1,7 @@
 import AboutSection from "./components/AboutSection";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
+import ProjectSection from "./components/ProjectSection";
 
 function App() {
   return (
@@ -15,17 +16,18 @@ function App() {
         </section>
         <section
           id="about"
-          className="bg-[#0a132d] py-20 px-4 sm:px-6 lg:px-8 text-white"
+          className="bg-slate-800 py-20 px-4 sm:px-6 lg:px-8 text-white"
         >
           <AboutSection />
         </section>
 
         <section
           id="projects"
-          className="h-screen flex items-center justify-center bg-slate-900"
+          className="min-h-screen flex items-center justify-center bg-slate-900"
         >
-          <h2 className="text-3xl font-bold text-white">My Projects</h2>
+          <ProjectSection />
         </section>
+
         <section
           id="skills"
           className="h-screen flex items-center justify-center bg-slate-800"

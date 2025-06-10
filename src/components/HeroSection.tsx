@@ -14,14 +14,12 @@ export default function HeroSection() {
             <div className="relative w-48 h-48 sm:w-64 sm:h-64 lg:w-80 lg:h-80">
               <div className="absolute inset-0 rounded-full border-2 border-[#3b82f6] glow-blue"></div>
               <div className="absolute inset-1 bg-gray-100 rounded-full overflow-hidden">
-<img
-  src="/Photograph.jpg"
-  alt="Vaibhav Mathur"
-  loading="lazy"
-  className="w-full h-full object-cover"
-/>
-
-
+                <img
+                  src="/Photograph.jpg"
+                  alt="Vaibhav Mathur"
+                  loading="lazy"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           </div>

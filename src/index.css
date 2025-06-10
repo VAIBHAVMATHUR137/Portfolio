@@ -1,1 +1,15 @@
 @import "tailwindcss";
+
+@tailwind utilities;
+
+body {
+  @apply bg-[#010b1d] text-white;
+}
+
+.glow-blue {
+  box-shadow: 0 0 15px 5px rgba(59, 130, 246, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}

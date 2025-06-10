@@ -1,7 +1,5 @@
-"use client"
-
-import { useState } from "react"
-import { Menu, X } from "lucide-react"
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const navItems = [
   { label: "Home", href: "#home" },
@@ -9,10 +7,10 @@ const navItems = [
   { label: "Projects", href: "#projects" },
   { label: "Skills", href: "#skills" },
   { label: "Contact", href: "#contact" },
-]
+];
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="sticky top-0 z-40 w-full bg-transparent backdrop-blur-sm">
@@ -24,7 +22,7 @@ export default function Navbar() {
               href="#home"
               className="text-xl font-bold text-white drop-shadow-[0_0_10px_rgba(255,255,255,0.8)] hover:drop-shadow-[0_0_15px_rgba(255,255,255,1)] transition-all"
             >
-              Portfolio
+              Vaibhav Mathur
             </a>
           </div>
 
@@ -70,5 +68,5 @@ export default function Navbar() {
         )}
       </div>
     </header>
-  )
+  );
 }

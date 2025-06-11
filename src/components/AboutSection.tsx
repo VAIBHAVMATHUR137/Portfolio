@@ -15,10 +15,10 @@ export default function AboutSection() {
           viewport={{ once: true }}
         >
           <h2 className="text-4xl sm:text-5xl font-bold mb-6 drop-shadow-[0_0_12px_rgba(59,130,246,0.6)]">
-            Curious Mind. Clean Code. Big Dreams.
+            Curious Mind. Clean Code. Optimized systems.
           </h2>
           <p className="text-gray-300 text-lg leading-relaxed">
-            I'm a full-stack developer who doesn’t just write code—I engineer
+            I'm a full-stack developer who doesn’t just write code—I try to engineer
             workflows. My obsession is with understanding how things work under
             the hood: from database design to client-side rendering and
             everything in between.
@@ -30,7 +30,7 @@ export default function AboutSection() {
             security to custom job ID validations.
             <br />
             <br />
-            When I’m not coding, I’m writing blogs on full stack system workflow, as well as posting my debugging experiences on X
+            When I’m not coding, I’m writing blogs on medium regarding full stack system workflow, as well as posting my debugging experiences on X
           </p>
         </motion.div>
 

@@ -1,6 +1,5 @@
-
-import { motion } from "framer-motion"
-import { Code, Globe, Server, Wrench } from "lucide-react"
+import { motion } from "framer-motion";
+import { Code, Globe, Server, Wrench } from "lucide-react";
 
 const skillCategories = [
   {
@@ -17,19 +16,21 @@ const skillCategories = [
       "Tailwind CSS",
       "Material UI",
       "ShadCN",
+      "AsyncThunk",
+      'Token interception'
     ],
   },
   {
     title: "Backend Development",
     icon: <Server className="w-6 h-6" />,
     color: "from-green-500 to-emerald-500",
-    skills: ["Node.js", "Express.js", "MongoDB", "JWT Auth", "REST APIs", "AsyncThunk"],
+    skills: ["Node.js", "Express.js", "MongoDB", "JWT Auth", "REST APIs", 'Backend Caching for authentication'],
   },
   {
     title: "Tools & Technologies",
     icon: <Wrench className="w-6 h-6" />,
     color: "from-purple-500 to-pink-500",
-    skills: ["Git", "GitHub", "VS Code", "Firebase", "Vercel", "Render"],
+    skills: ['Redis', "GitHub", "VS Code", "Firebase", "Vercel", "Render"],
   },
   {
     title: "Programming Languages",
@@ -37,11 +38,14 @@ const skillCategories = [
     color: "from-orange-500 to-red-500",
     skills: ["JavaScript", "TypeScript", "Java"],
   },
-]
+];
 
 export default function SkillsSection() {
   return (
-    <section id="skills" className="bg-slate-800 py-20 px-4 sm:px-6 lg:px-8 text-white">
+    <section
+      id="skills"
+      className="bg-slate-800 py-20 px-4 sm:px-6 lg:px-8 text-white"
+    >
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-16">
@@ -78,12 +82,18 @@ export default function SkillsSection() {
             >
               {/* Category Header */}
               <div className="flex items-center gap-3 mb-6">
-                <div className={`p-3 rounded-lg bg-gradient-to-r ${category.color} bg-opacity-20`}>
-                  <div className={`text-transparent bg-clip-text bg-gradient-to-r ${category.color}`}>
+                <div
+                  className={`p-3 rounded-lg bg-gradient-to-r ${category.color} bg-opacity-20`}
+                >
+                  <div
+                    className={`text-transparent bg-clip-text bg-gradient-to-r ${category.color}`}
+                  >
                     {category.icon}
                   </div>
                 </div>
-                <h3 className="text-xl font-semibold text-white">{category.title}</h3>
+                <h3 className="text-xl font-semibold text-white">
+                  {category.title}
+                </h3>
               </div>
 
               {/* Skills List */}
@@ -121,25 +131,30 @@ export default function SkillsSection() {
           className="mt-16 text-center"
         >
           <div className="bg-[#1a2332] p-8 rounded-xl border border-gray-700/50 max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold text-white mb-4">Keep Upskilling</h3>
+            <h3 className="text-2xl font-semibold text-white mb-4">
+              Keep Upskilling
+            </h3>
             <p className="text-gray-400 leading-relaxed">
-              I'm constantly expanding my skill set and staying up-to-date with the latest technologies. Currently
-              exploring advanced React patterns, microservices architecture, and cloud technologies to build more
-              scalable and efficient applications.
+              I'm constantly expanding my skill set and staying up-to-date with
+              the latest technologies. Currently exploring advanced React
+              patterns, microservices architecture, and cloud technologies to
+              build more scalable and efficient applications.
             </p>
             <div className="flex flex-wrap justify-center gap-3 mt-6">
-              {["Next.js", "SocketIO", "Docker", "AWS", "Microservices"].map((tech) => (
-                <span
-                  key={tech}
-                  className="px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-sm font-medium rounded-full"
-                >
-                  {tech}
-                </span>
-              ))}
+              {["Next.js", "SocketIO", "Docker", "AWS", "Microservices"].map(
+                (tech) => (
+                  <span
+                    key={tech}
+                    className="px-3 py-1 bg-blue-500/10 border border-blue-500/20 text-blue-300 text-sm font-medium rounded-full"
+                  >
+                    {tech}
+                  </span>
+                )
+              )}
             </div>
           </div>
         </motion.div>
       </div>
     </section>
-  )
+  );
 }

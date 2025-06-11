@@ -1,4 +1,5 @@
 import AboutSection from "./components/AboutSection";
+import ContactSection from "./components/ContactSection";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import ProjectSection from "./components/ProjectSection";
@@ -39,7 +40,7 @@ function App() {
           id="contact"
           className="h-screen flex items-center justify-center bg-slate-900"
         >
-          <h2 className="text-3xl font-bold text-white">Contact</h2>
+          <ContactSection/>
         </section>
       </main>
     </div>

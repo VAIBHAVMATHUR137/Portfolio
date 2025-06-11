@@ -1,3 +1,5 @@
+import AsyncThunk from '../public/Asyncthunk.jpg'
+import Redux from '../public/Redux.jpg'
 export const details = [
   { name: "Vaibhav Mathur" },
   { profession: "Full Stack developer" },
@@ -33,7 +35,7 @@ export const blogs = [
       "Explanation of benifits of using Redux to handle states over conventional hooks such as context and useState, including explanation of workflow with the help of flowcharts",
     readTime: "8 min read",
     url: "https://medium.com/@vaibhavmathur128/redux-tool-kit-beginner-friendly-approach-with-live-project-80f644178b2e",
-    imageUrl: "./public/Redux.jpg",
+    imageUrl: Redux,
     tags: ["Redux", "State Management", "React", "Architecture"],
   },
   {
@@ -42,7 +44,7 @@ export const blogs = [
       "Complete guide to handling async operations in Redux with createAsyncThunk and error handling, visualized with comprehensive flowcharts. Includes all the corner cases in terms of scale of system.",
     readTime: "12 min read",
     url: "https://medium.com/@vaibhavmathur128/using-async-thunk-in-redux-to-handle-api-with-demo-mini-project-baea1da0952d", 
-    imageUrl: "./public/Asyncthunk.jpg", 
+    imageUrl: AsyncThunk, 
     tags: ["AsyncThunk", "Redux", "API Integration", "Error Handling"],
   },
 ]

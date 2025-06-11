@@ -32,7 +32,7 @@ const contactInfo = [
     icon: <Linkedin className="w-6 h-6" />,
     title: "LinkedIn",
     value: "Vaibhav Mathur", // Replace with your LinkedIn name
-    link: "https://linkedin.com/in/yourusername",
+    link: "https://www.linkedin.com/in/vaibhav-mathur-a5415b350/e",
     color: "from-blue-600 to-blue-700",
   },
 ]

@@ -1,4 +1,3 @@
-"use client"
 
 import { motion } from "framer-motion"
 import { Code, Globe, Server, Wrench } from "lucide-react"
@@ -9,84 +8,36 @@ const skillCategories = [
     icon: <Globe className="w-6 h-6" />,
     color: "from-blue-500 to-cyan-500",
     skills: [
-      { name: "React", level: 87 },
-      { name: "TypeScript", level: 85 },
-      { name: "JavaScript", level: 90 },
-      { name: "Redux Toolkit", level: 92 },
-      { name: "HTML5", level: 95 },
-      { name: "CSS3", level: 90 },
-      { name: "Tailwind CSS", level: 85 },
-      { name: "Material UI", level: 80 },
-      { name: "ShadCN", level: 80 }
-
+      "React",
+      "TypeScript",
+      "JavaScript",
+      "Redux Toolkit",
+      "HTML5",
+      "CSS3",
+      "Tailwind CSS",
+      "Material UI",
+      "ShadCN",
     ],
   },
   {
     title: "Backend Development",
     icon: <Server className="w-6 h-6" />,
     color: "from-green-500 to-emerald-500",
-    skills: [
-      { name: "Node.js", level: 85 },
-      { name: "Express.js", level: 80 },
-      { name: "MongoDB", level: 82 },
-      { name: "JWT Auth", level: 85 },
-      { name: "REST APIs", level: 88 },
-      { name: "AsyncThunk", level: 85 },
-    ],
+    skills: ["Node.js", "Express.js", "MongoDB", "JWT Auth", "REST APIs", "AsyncThunk"],
   },
   {
     title: "Tools & Technologies",
     icon: <Wrench className="w-6 h-6" />,
     color: "from-purple-500 to-pink-500",
-    skills: [
-      { name: "Git", level: 90 },
-      { name: "GitHub", level: 88 },
-      { name: "VS Code", level: 95 },
-      { name: "Firebase", level: 75 },
-      { name: "Vercel", level: 80 },
-      { name: "Render", level: 90 }
-    ],
+    skills: ["Git", "GitHub", "VS Code", "Firebase", "Vercel", "Render"],
   },
   {
     title: "Programming Languages",
     icon: <Code className="w-6 h-6" />,
     color: "from-orange-500 to-red-500",
-    skills: [
-      { name: "JavaScript", level: 95 },
-      { name: "TypeScript", level: 85 },
-
-      { name: "Java", level: 65 },
-    ],
+    skills: ["JavaScript", "TypeScript", "Java"],
   },
 ]
-
-const SkillBar = ({
-  skill,
-  index,
-  categoryIndex,
-}: { skill: { name: string; level: number }; index: number; categoryIndex: number }) => {
-  return (
-    <div className="mb-4">
-      <div className="flex justify-between items-center mb-2">
-        <span className="text-gray-300 text-sm font-medium">{skill.name}</span>
-        <span className="text-blue-400 text-sm font-semibold">{skill.level}%</span>
-      </div>
-      <div className="w-full bg-gray-700/50 rounded-full h-2 overflow-hidden">
-        <motion.div
-          className="h-full bg-gradient-to-r from-blue-500 to-cyan-400 rounded-full"
-          initial={{ width: 0 }}
-          whileInView={{ width: `${skill.level}%` }}
-          transition={{
-            duration: 1.2,
-            delay: categoryIndex * 0.1 + index * 0.1,
-            ease: "easeOut",
-          }}
-          viewport={{ once: true }}
-        />
-      </div>
-    </div>
-  )
-}
 
 export default function SkillsSection() {
   return (
@@ -110,7 +61,7 @@ export default function SkillsSection() {
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
           >
-            A comprehensive overview of my technical expertise and proficiency levels
+            A comprehensive overview of my technical expertise
           </motion.p>
         </div>
 
@@ -136,9 +87,25 @@ export default function SkillsSection() {
               </div>
 
               {/* Skills List */}
-              <div className="space-y-4">
+              <div className="flex flex-wrap gap-3">
                 {category.skills.map((skill, index) => (
-                  <SkillBar key={skill.name} skill={skill} index={index} categoryIndex={categoryIndex} />
+                  <motion.div
+                    key={skill}
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{
+                      duration: 0.4,
+                      delay: categoryIndex * 0.1 + index * 0.05,
+                      type: "spring",
+                      stiffness: 100,
+                    }}
+                    viewport={{ once: true }}
+                    className={`px-4 py-2 rounded-lg bg-gradient-to-r ${category.color} bg-opacity-10 
+                      border border-gray-700/50 hover:border-blue-500/30 transition-all duration-300
+                      hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:-translate-y-1`}
+                  >
+                    <span className="text-white font-medium">{skill}</span>
+                  </motion.div>
                 ))}
               </div>
             </motion.div>

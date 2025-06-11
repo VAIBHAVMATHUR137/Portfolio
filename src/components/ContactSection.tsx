@@ -1,4 +1,3 @@
-"use client"
 
 import { motion } from "framer-motion"
 import { Mail, Phone, Github, Linkedin, MessageSquare, FileText, HelpCircle } from "lucide-react"
@@ -7,15 +6,15 @@ const contactInfo = [
   {
     icon: <Phone className="w-6 h-6" />,
     title: "Mobile",
-    value: "+91 12345 67890", // Replace with your actual phone
-    link: "tel:+911234567890",
+    value: "7060915581",
+    link: "tel:+917060915581",
     color: "from-green-500 to-emerald-500",
   },
   {
     icon: <Mail className="w-6 h-6" />,
     title: "Email",
-    value: "vaibhav.mathur@example.com", // Replace with your actual email
-    link: "mailto:vaibhav.mathur@example.com",
+    value: "Vaibhavmathur128@gmail.com", 
+    link: "mailto:Vaibhavmathur128@gmail.com",
     color: "from-blue-500 to-cyan-500",
   },
   {
@@ -25,8 +24,8 @@ const contactInfo = [
       </svg>
     ),
     title: "Twitter",
-    value: "@yourusername", // Replace with your Twitter handle
-    link: "https://twitter.com/yourusername",
+    value: "@Mathur128", 
+    link: "https://x.com/Mathur128",
     color: "from-slate-500 to-slate-600",
   },
   {
@@ -42,29 +41,29 @@ const socialProfiles = [
   {
     icon: <Github className="w-6 h-6" />,
     title: "GitHub",
-    value: "@yourusername", // Replace with your GitHub username
-    link: "https://github.com/yourusername",
+    value: "@VAIBHAVMATHUR137", // Replace with your GitHub username
+    link: "https://github.com/VAIBHAVMATHUR137",
     color: "from-gray-500 to-gray-600",
   },
   {
     icon: <FileText className="w-6 h-6" />,
     title: "Medium",
-    value: "@yourusername", // Replace with your Medium username
-    link: "https://medium.com/@yourusername",
+    value: "@vaibhavmathur128", // Replace with your Medium username
+    link: "https://medium.com/@vaibhavmathur128",
     color: "from-gray-700 to-gray-800",
   },
   {
     icon: <MessageSquare className="w-6 h-6" />,
     title: "Discord",
-    value: "yourusername#1234", // Replace with your Discord username
-    link: "#",
+    value: "Vaibhavmathur137", // Replace with your Discord username
+    link: "https://discordapp.com/users/Vaibhavmathur137",
     color: "from-indigo-500 to-purple-600",
   },
   {
     icon: <HelpCircle className="w-6 h-6" />,
     title: "Stack Overflow",
-    value: "yourusername", // Replace with your SO username
-    link: "https://stackoverflow.com/users/yourprofile",
+    value: "Vaibhav-Mathur", // Replace with your SO username
+    link: "https://stackoverflow.com/users/27094449/vaibhav-mathur?tab=profile",
     color: "from-orange-500 to-orange-600",
   },
 ]

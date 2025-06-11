@@ -52,7 +52,7 @@ export default function HeroSection() {
                 Get in Touch
               </a>
               <a
-                href="/cv.pdf"
+                href="https://drive.google.com/file/d/1Vz3BxnTmu_4MRSS4m3cwQKOJqztZRUX4/view?usp=sharing"
                 download
                 className="px-6 py-3 bg-transparent border border-white text-white rounded-md hover:bg-white/10 transition-all flex items-center justify-center gap-2 drop-shadow-[0_0_10px_rgba(255,255,255,0.3)]"
               >
